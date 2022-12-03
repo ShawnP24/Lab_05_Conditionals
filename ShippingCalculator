@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class ShippingCostCalculator { public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    double price = 0;
+    double shippingCharge;
+    System.out.print("Enter the price of your item: ");
+    if (in.hasNextDouble()) {
+        price = in.nextDouble();
+        in.nextLine();
+
+    }
+    else{
+        String trash = in.nextLine();
+        System.out.println("Must enter a valid number for price: " + trash);
+    }
